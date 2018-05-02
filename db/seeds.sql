@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name) VALUES ("In-house Black Bean Vegan Burger");
