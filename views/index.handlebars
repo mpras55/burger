@@ -1,12 +1,14 @@
-<h1>Burgers!</h1>
-
+<div class="jumbotron text-center">
+	<img src="/assets/img/burger.jpg" alt="vegan burger" height="175px" width="250px">
+	<h1>Vegan Burger World</h1>
+</div>
 <h2>Burgers to be devoured!</h2>
 
 <ul>
 	{{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
 </ul>
 
-<h2>Burgers devoured!</h2>
+<h2>Burgers devoured. Yummmy!!!</h2>
 
 <ul>
 	{{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
@@ -29,5 +31,5 @@
 		<input type="radio" name="sleepy" value="0"> Awake
 	</div> --}}
 
-	<button type="submit">Add Burger</button>
+	<button class="btn btn-lg btn-primary" type="submit">Add Burger</button>
 </form>
